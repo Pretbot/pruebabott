@@ -1,3 +1,4 @@
+const fs      = require('fs');
 const { WebcastPushConnection } = require('tiktok-live-connector');
 const express = require('express');
 const http    = require('http');
@@ -36,7 +37,6 @@ const ytDlp = new YTDlpWrap(ytDlpBinaryPath);
 })();
 
 // ─── Apodos ───────────────────────────────────────────────────────────────────
-const fs   = require('fs');
 const path_apodos = path.join(__dirname, 'apodos.json');
 
 function loadApodos() {
